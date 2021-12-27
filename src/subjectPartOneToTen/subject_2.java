@@ -1,4 +1,4 @@
-package package_1;
+package subjectPartOneToTen;
 
 /**
  * 给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的
@@ -9,4 +9,7 @@ package package_1;
  * 你可以假设除了数字 0 之外，这两个数都不会以 0 开头。
  */
 public class subject_2 {
+
+    //不会用链表，尬住了
+
 }
