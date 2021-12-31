@@ -1,6 +1,7 @@
 package subjectPartOneToTen;
 
 //两个数组找中位数, 二叉树, 但是不知道什么叫树, 这里先爆破
+//虽然能过但肯定不合格,时间复杂度要求为O(log(m+n))
 public class subject_4 {
     public static double getMid(int[] nums1, int[] nums2) {
         int[] nums = new int[nums1.length + nums2.length];
