@@ -1,6 +1,7 @@
 package subjectPartOneToTen;
 
 //找最长回文字符串, 还是滑动窗口
+//超出时间限制
 public class subject_5 {
     public static StringBuffer windowSlide(String s) {
         int end = 0;
@@ -12,8 +13,8 @@ public class subject_5 {
         while (j < chars.length){
             for (int i = j;i < chars.length;i++){
                 stringBuffer.append(chars[i]);
-                if (testString(stringBuffer) && (i-j)>end){
-                    end=i-j;
+                if (testString(stringBuffer) && stringBuffer.length()>end){
+                    end=stringBuffer.length();
                     stringBuffer1.delete(0,stringBuffer1.length());
                     stringBuffer1.append(stringBuffer);
                 }
@@ -26,8 +27,21 @@ public class subject_5 {
     }
     public static boolean testString(StringBuffer s){
 
-        for (int i = 0; i < s.length(); i++) {
+        if(s.length()%2==0)
+        {
+            s.substring(0,s.length()/2);
+
+        } else {
 
         }
+
+
+
+        String s1 = s.substring(0,s.length()/2);
+        String s2 = s.substring(s.length()/2,s.length());
+        if (s1==s2)
+            return true;
+        else
+            return false;
     }
 }
