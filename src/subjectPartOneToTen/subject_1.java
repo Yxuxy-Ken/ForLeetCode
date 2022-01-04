@@ -11,6 +11,7 @@ package subjectPartOneToTen;
  */
 public class subject_1 {
 
+    //version-base-1.0
     //55ms 38.7MB
     public static int[] twoSum_0(int[] nums, int target) {
         int[] num = new int[2];
@@ -26,6 +27,7 @@ public class subject_1 {
         return num;
     }
 
+    //version-1.0
     //113ms 38.5MB
     public static int[] twoSum_1(int[] nums, int target) {
         int[] num = new int[2];

@@ -5,11 +5,13 @@ package subjectPartOneToTen;
 public class subject_3 {
 
     public static int windowSlide(String s) {
-        int end = 0;int j = 0;char[] chars = s.toCharArray();StringBuffer stringBuffer = new StringBuffer();
+        int end = 0;
+        char[] chars = s.toCharArray();
+        StringBuffer stringBuffer = new StringBuffer();
 
-        while (j < chars.length) {
+        for(int j=0;j<chars.length;j++){
             int i = j;
-            while (i<chars.length) {
+            while (i < chars.length) {
                 if (stringBuffer.indexOf(String.valueOf(chars[i])) == -1) {
                     stringBuffer.append(chars[i++]);
                     if (stringBuffer.length() > end)
@@ -19,12 +21,11 @@ public class subject_3 {
                     break;
                 }
             }
-            j++;
         }
         return end;
     }
 }
-    //能用, 但是过不了超长字符串的时间要求
+//能用, 但是过不了超长字符串的时间要求
 //    public static int lengthOfLongestSubstring(String s) {
 //        int  = 0;
 //        Map<Character, Integer> map = new HashMap<>();
