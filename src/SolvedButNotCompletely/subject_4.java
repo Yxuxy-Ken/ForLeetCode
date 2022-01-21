@@ -1,4 +1,4 @@
-package subjectPartOneToTen;
+package SolvedButNotCompletely;
 
 import java.util.Arrays;
 

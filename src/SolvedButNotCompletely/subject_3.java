@@ -1,4 +1,4 @@
-package subjectPartOneToTen;
+package SolvedButNotCompletely;
 
 //找的是无重复字符最长串
 //窗口滑动

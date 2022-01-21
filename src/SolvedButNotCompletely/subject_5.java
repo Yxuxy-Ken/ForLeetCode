@@ -1,4 +1,4 @@
-package subjectPartOneToTen;
+package SolvedButNotCompletely;
 
 /**
  * 找最长回文字符串,本来以为还是滑动窗口
