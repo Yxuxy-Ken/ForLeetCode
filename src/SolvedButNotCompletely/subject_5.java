@@ -2,7 +2,7 @@ package SolvedButNotCompletely;
 
 /**
  * 找最长回文字符串,本来以为还是滑动窗口
- *
+ * <p>
  * 实际上这是动态规划的问题
  */
 public class subject_5 {
@@ -10,34 +10,35 @@ public class subject_5 {
         int end = 0;
         char[] chars = s.toCharArray();
         StringBuffer stringBuffer = new StringBuffer();
-        String t= "";
-        for(int j=0;j<chars.length;j++){
-            for (int i = j;i < chars.length;i++){
+        String t = "";
+        for (int j = 0; j < chars.length; j++) {
+            for (int i = j; i < chars.length; i++) {
                 stringBuffer.append(chars[i]);
-                if (testString(stringBuffer) && stringBuffer.length()>end){
-                    end=stringBuffer.length();
-                    t=stringBuffer.toString();
+                if (testString(stringBuffer) && stringBuffer.length() > end) {
+                    end = stringBuffer.length();
+                    t = stringBuffer.toString();
                 }
             }
-            stringBuffer.delete(0,stringBuffer.length());
+            stringBuffer.delete(0, stringBuffer.length());
         }
         return t;
     }
-    public static boolean testString(StringBuffer s){
-        char[] c  = s.toString().toCharArray();
-        StringBuffer s1  = new StringBuffer();
-        StringBuffer s2  = new StringBuffer();
-        if (c.length%2==0){
+
+    public static boolean testString(StringBuffer s) {
+        char[] c = s.toString().toCharArray();
+        StringBuffer s1 = new StringBuffer();
+        StringBuffer s2 = new StringBuffer();
+        if (c.length % 2 == 0) {
             for (int i = 0; i < c.length / 2; i++)
                 s1.append(c[i]);
-            for (int j = c.length-1; j>=c.length/2 ; j--) {
+            for (int j = c.length - 1; j >= c.length / 2; j--) {
                 s2.append(c[j]);
             }
         } else {
             for (int i = 0; i <= c.length / 2; i++) {
                 s1.append(c[i]);
             }
-            for (int j = c.length-1; j >=c.length/2; j--) {
+            for (int j = c.length - 1; j >= c.length / 2; j--) {
                 s2.append(c[j]);
             }
         }

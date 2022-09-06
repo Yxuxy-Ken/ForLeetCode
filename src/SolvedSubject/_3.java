@@ -6,9 +6,9 @@ public class _3 {
         int end = 0;
         char[] chars = s.toCharArray();
         StringBuilder stringBuffer = new StringBuilder();
-        for(int j=0;j<chars.length;j++){
+        for (int j = 0; j < chars.length; j++) {
             int i = j;
-            while (i<chars.length) {
+            while (i < chars.length) {
                 if (stringBuffer.indexOf(String.valueOf(chars[i])) == -1) {
                     stringBuffer.append(chars[i++]);
                     if (stringBuffer.length() > end)
@@ -22,9 +22,9 @@ public class _3 {
         return end;
     }
 
-    public static void run(){
+    public static void run() {
         _3 run = new _3();
-        String s  = "abcafefesfd";
+        String s = "abcafefesfd";
         System.out.println(run.lengthOfLongestSubstring(s));
     }
 

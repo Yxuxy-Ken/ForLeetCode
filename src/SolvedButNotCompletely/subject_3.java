@@ -9,7 +9,7 @@ public class subject_3 {
         char[] chars = s.toCharArray();
         StringBuffer stringBuffer = new StringBuffer();
 
-        for(int j=0;j<chars.length;j++){
+        for (int j = 0; j < chars.length; j++) {
             int i = j;
             while (i < chars.length) {
                 if (stringBuffer.indexOf(String.valueOf(chars[i])) == -1) {

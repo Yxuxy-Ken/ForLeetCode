@@ -29,18 +29,19 @@ public class subject_4 {
         }
         for (int x :
                 nums) {
-            System.out.print(x+",");
+            System.out.print(x + ",");
 
-        }System.out.println();
+        }
+        System.out.println();
 
-        if(nums.length%2!=0){
-            double end = nums[nums.length/2];
+        if (nums.length % 2 != 0) {
+            double end = nums[nums.length / 2];
             return end;
-        }else {
-            System.out.println(nums[nums.length/2]+","+nums[nums.length/2-1]);
-            double end = ( (double) nums[nums.length/2-1] +
-                    (double) nums[nums.length/2] )
-                    /2;
+        } else {
+            System.out.println(nums[nums.length / 2] + "," + nums[nums.length / 2 - 1]);
+            double end = ((double) nums[nums.length / 2 - 1] +
+                    (double) nums[nums.length / 2])
+                    / 2;
             return end;
         }
     }
@@ -55,9 +56,9 @@ public class subject_4 {
         Arrays.sort(nums);//实际上为双轴快速排序, 时间复杂度为 O(n log(n)), 看了下实现, 这么离谱的排序复杂度只有这点?
         int n = nums.length;
         if (n % 2 == 0) {
-            return (nums[(n/2)-1] + nums[n/2])/2.0;
+            return (nums[(n / 2) - 1] + nums[n / 2]) / 2.0;
         } else {
-            return nums[n/2];
+            return nums[n / 2];
         }
     }
 }
