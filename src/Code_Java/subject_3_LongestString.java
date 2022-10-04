@@ -7,6 +7,8 @@ package Code_Java;
  */
 public class subject_3_LongestString {
     public int lengthOfLongestSubstring(String s) {
+        StringBuilder stringBuilder = new StringBuilder(s);
+
         return 0;
     }
 }

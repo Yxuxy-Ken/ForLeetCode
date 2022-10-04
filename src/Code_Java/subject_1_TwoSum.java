@@ -21,8 +21,10 @@ public class subject_1_TwoSum {
 //                }
 //            }
 //        }
-
-        HashMap<Integer,Integer> hashMap = new HashMap<>();
+        HashMap<String ,Integer> hashMap = new HashMap<>();
+        hashMap.put("target",target);
+        for (int i = 0; i < nums.length; i++) {
+        }
 
         return null;
     }
