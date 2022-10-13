@@ -7,36 +7,11 @@ import java.util.List;
 public class Home {
     public static void main(String[] args) {
 
-        int[][] matrix = new int[][]{{0,1}};
+        int[] nums = new int[]{1,1,2,2,2,3,4,5,6,6,6,8,10,22};
 
-        boolean[] line = new boolean[matrix.length];
-        boolean[] row = new boolean[matrix[0].length];
+        for (int i = 0; i < nums.length; i++) {
 
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[0].length; j++) {
-                if (matrix[i][j] == 0) {
-                    line[i] = true;
-                    row[j] = true;
-                }
-            }
         }
 
-
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[0].length; j++) {
-                if (line[i] || row[j]) {
-                    matrix[i][j] = 0;
-                }
-            }
-        }
-
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[0].length; j++) {
-                System.out.print(matrix[i][j]+" ");
-                }
-            System.out.println();
-            }
-        }
-
-
+    }
 }
